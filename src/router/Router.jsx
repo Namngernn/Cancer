@@ -8,6 +8,7 @@ import Effects from "../pages/Effects/Effects";
 import PatientManual from "../pages/PatientManual/PatientManual";
 import Login from "../pages/Authentication/Login";
 import Register from "../pages/Authentication/Register";
+import Appointment2 from "../pages/Appointment/Appointment2";
 import AppointmentDetails from "../pages/Appointment/AppointmentDetails";
 import PostponeAppointment from "../pages/Appointment/PostponeAppointment";
 import FillResults from "../pages/BloodResults/FillResults";
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
         {
           path: "/Appointment",
           element: <Appointment/>,
+        },
+        {
+          path: "/Appointment/Appointment2",
+          element: <Appointment2/>,
         },
         {
           path: "/Appointment/AppointmentDetails",

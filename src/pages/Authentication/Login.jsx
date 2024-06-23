@@ -12,6 +12,10 @@ const onFinishFailed = (errorInfo) => {
 
 const { Title } = Typography;
 
+const onChange = (e) => {
+  console.log('Change:', e.target.value);
+};
+
 const Login = () => {
   
   return (
@@ -37,7 +41,7 @@ const Login = () => {
             <Form.Item              
               name="username"
               rules={[{required: true,message: 'กรุณากรอกเลขประจำตัวประชาชนให้ถูกต้อง',},]}>
-              <Input size="large" placeholder="เลขประจำตัวประชาชน 13 หลัก" prefix={<UserOutlined />}/>
+              <Input showCount maxLength={13} onChange={onChange} size="large" placeholder="เลขประจำตัวประชาชน 13 หลัก" prefix={<UserOutlined />}/>
             </Form.Item>
 
             <Form.Item
@@ -53,9 +57,9 @@ const Login = () => {
             </Form.Item>
 
             <Form.Item>
-              <Link to="/">
+              {/* <Link to="/"> */}
                 <Button type="primary" htmlType="submit" className='bt-blue'>เข้าสู่ระบบ</Button>
-              </Link>
+              {/* </Link> */}
             </Form.Item>
             
       </Form>

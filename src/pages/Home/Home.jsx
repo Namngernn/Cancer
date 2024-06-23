@@ -21,10 +21,10 @@ const Home = () => {
         <Link to={"/PatientManual"}>PatientManual //นง</Link>
         <br />
         <br />
-        <Link to={"/Login"}>Login</Link>
+        <Link to={"/Login"}>Login//นง</Link>
         <br />
         <br />
-        <Link to={"/Register"}>Register</Link>
+        <Link to={"/Register"}>Register//นง</Link>
         <br />
     </div>
   )
